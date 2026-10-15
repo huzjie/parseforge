@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: parseforge
+spec:
+  selector:
+    app: parseforge
+  ports:
+    - port: 80
+      targetPort: 8000
+  type: ClusterIP

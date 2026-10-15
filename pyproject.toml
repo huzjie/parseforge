@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parseforge"
+version = "0.1.0"
+description = "Omni-modal document parsing engine: docs/images/charts/audio-video -> structured JSON (Youtu-Parsing-Omni direction, zero-dependency reference)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "parseforge contributors" }]
+keywords = ["document-parsing", "structured-extraction", "layout-analysis", "table-recognition", "chart-understanding", "ocr", "multimodal", "constrained-decoding", "json"]
+
+[project.scripts]
+parseforge = "parseforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["parseforge*"]

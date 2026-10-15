@@ -1,0 +1,12 @@
+# document-heavy workload: more layout regions, tighter threshold
+layout:
+  min_area: 2
+  score_threshold: 0.4
+
+table:
+  max_rows: 16
+  max_cols: 10
+
+decode:
+  max_tokens: 256
+  schema_mode: strict

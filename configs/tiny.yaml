@@ -1,0 +1,14 @@
+# smallest smoke-test config (instant to run)
+vision:
+  dim: 16
+  depth: 1
+  heads: 2
+  img_size: 16
+  patch_size: 8
+
+audio:
+  n_frames: 4
+
+model:
+  dim: 16
+  skill: 0.5

@@ -1,0 +1,18 @@
+replicaCount: 2
+
+image:
+  repository: parseforge
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "250m"
+  limits:
+    memory: "512Mi"
+    cpu: "1"

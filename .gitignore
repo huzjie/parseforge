@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Data / caches / checkpoints
+/data/
+*.db
+*.sqlite3
+*.ckpt
+.parseforge_ckpt*
+.parseforge_cache/
+.push_cache.json
+*.bin
+*.safetensors
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

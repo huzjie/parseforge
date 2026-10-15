@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: parseforge
+  labels:
+    app: parseforge
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: parseforge
+  template:
+    metadata:
+      labels:
+        app: parseforge
+    spec:
+      containers:
+        - name: parseforge
+          image: parseforge:0.1.0
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "1"

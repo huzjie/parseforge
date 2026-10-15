@@ -1,0 +1,8 @@
+# chart-heavy workload
+chart:
+  max_series: 6
+  max_points: 16
+
+decode:
+  temperature: 0.2
+  schema_mode: strict

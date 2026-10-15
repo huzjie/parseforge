@@ -1,0 +1,7 @@
+# table-heavy workload
+table:
+  max_rows: 20
+  max_cols: 12
+
+layout:
+  score_threshold: 0.4

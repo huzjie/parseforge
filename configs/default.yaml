@@ -1,0 +1,41 @@
+# parseforge default config (small fast proxy)
+vision:
+  patch_size: 8
+  img_size: 32
+  dim: 32
+  depth: 2
+  heads: 4
+
+audio:
+  frame_size: 16
+  n_frames: 8
+  dim: 32
+
+layout:
+  min_area: 4
+  score_threshold: 0.5
+
+table:
+  max_rows: 12
+  max_cols: 8
+
+chart:
+  max_series: 6
+  max_points: 12
+
+decode:
+  max_tokens: 128
+  temperature: 0.7
+  top_p: 0.9
+  schema_mode: auto
+
+model:
+  name: mock
+  dim: 32
+  skill: 0.5
+
+serving:
+  host: "127.0.0.1"
+  port: 8000
+
+seed: 42
